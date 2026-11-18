@@ -1,0 +1,7 @@
+# file unico generato per la pubblicazione come Artifact su claude.ai
+artifact/
+
+# sistema
+Thumbs.db
+desktop.ini
+.DS_Store

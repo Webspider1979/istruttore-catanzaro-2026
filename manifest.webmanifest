@@ -1,0 +1,20 @@
+{
+  "name": "Istruttore Catanzaro 2026 — studio e esercitazioni",
+  "short_name": "Istruttore CZ",
+  "description": "Studio organizzato per unità e quiz con punteggi del bando per il concorso da istruttore amministrativo-contabile del Comune di Catanzaro.",
+  "lang": "it",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "id": "istruttore-catanzaro-2026",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f8fa",
+  "theme_color": "#2f5d8c",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -26,15 +26,24 @@ self.addEventListener('activate', (e) => {
   );
 });
 
+/* Strategia: prima la rete, poi la cache.
+   Così una nuova versione pubblicata arriva sempre al primo avvio con
+   connessione, mentre senza rete l'app continua a funzionare dalla copia
+   salvata. L'alternativa (prima la cache) lascerebbe gli utenti su una
+   versione vecchia finché non cambia il nome della cache. */
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
   if (url.origin !== location.origin) return; // i font di Google passano dalla rete
   e.respondWith(
-    caches.match(e.request).then((hit) => hit || fetch(e.request).then((res) => {
-      const copy = res.clone();
-      caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
-      return res;
-    }).catch(() => caches.match('./index.html')))
+    fetch(e.request)
+      .then((res) => {
+        if (res && res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
+        }
+        return res;
+      })
+      .catch(() => caches.match(e.request).then((hit) => hit || caches.match('./index.html')))
   );
 });

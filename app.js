@@ -973,7 +973,9 @@
       '<li>Termine: ' + esc(b.domanda.termine) + '.</li>' +
       '<li>Tassa di concorso: ' + esc(b.domanda.tassa) + '.</li>' +
       '<li>Titolo di studio: ' + esc(b.domanda.titolo_studio) + '.</li>' +
-      '</ul></section>' +
+      '</ul>' +
+      (b.domanda.nota_titolo_studio ? '<div class="notice">' + esc(b.domanda.nota_titolo_studio) + '</div>' : '') +
+      '</section>' +
 
       '<section class="stack-s"><h2 style="font-size:1.1rem">Avvertenze</h2>' +
       b.avvertenze.map(function (a) { return '<div class="notice">' + esc(a) + '</div>'; }).join('') +

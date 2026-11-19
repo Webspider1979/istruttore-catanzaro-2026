@@ -46,6 +46,8 @@ Da ogni scheda puoi partire con un’esercitazione limitata a quell’argomento:
 
 Le schede che hai aperto restano segnate con un punto verde nell’indice.
 
+Le 75 schede sono state rilette articolo per articolo il 19 novembre 2026: contengono asserzioni di diritto e non soltanto testo didattico, quindi sono state controllate sulle fonti come i quesiti. Gli otto rilievi emersi — fra cui un riferimento inesistente nel codice di comportamento e un’inversione sulla rotazione sottosoglia — sono corretti e documentati nel report di verifica del progetto.
+
 ### Esercitazione
 
 Prima di ogni sessione scegli:
@@ -117,4 +119,4 @@ Per aggiungere domande basta creare o modificare un file in `work/js/blocchi/` e
 
 ## Avvertenze
 
-I quesiti sono esercizi **originali**: il bando dichiara che non è prevista la pubblicazione di una banca dati ufficiale. Le fonti sono verificate al 18 novembre 2026. Soglie, importi e clausole contrattuali vanno ricontrollati prima della prova: sono gli elementi che cambiano più spesso.
+I quesiti sono esercizi **originali**: il bando dichiara che non è prevista la pubblicazione di una banca dati ufficiale. Le fonti sono verificate al 18 novembre 2026; tutti i 933 quesiti e tutte le 75 schede sono poi stati riletti articolo per articolo, con le correzioni documentate nel report di verifica. Soglie, importi e clausole contrattuali vanno ricontrollati prima della prova: sono gli elementi che cambiano più spesso.
